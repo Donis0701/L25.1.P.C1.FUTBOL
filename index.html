@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="salida"></div>
-    <script src="principal.js" type="module"></script>
+<section id="juegoForm">
+    <h3>Juego</h3>
+    <input type="text" id="juegoForm_inResultado" placeholder="1 o 0"></input>
+    <button id="juegoForm_btProcesar">Procesar</button>
+</section>
+<section id="mainForm">
+<h3>Resultados</h3>
+<p>juegos: <span id="mainForm_lblpartido"></span></p>
+<p>Porcentaje Ganados: <span id="mainForm_lblporcentajeGanados"></span>%"</p>
+</section>
 </body>
+<script type="module">
+    import cl_principal from "./js/principal.js";
+    new cl_principal()
+</script>
 </html>
